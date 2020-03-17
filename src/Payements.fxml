@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PayementsController">
+   <children>
+      <ImageView fitHeight="567.0" fitWidth="849.0" layoutX="-25.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@59550544_345009106374028_2534987700662960128_n.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="39.96" />
+         </effect>
+      </ImageView>
+      <Button layoutX="23.0" layoutY="453.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Back" />
+      <TextField fx:id="CitizenID" layoutX="263.0" layoutY="152.0" prefHeight="35.0" prefWidth="274.0" promptText="Citizen ID" />
+      <ComboBox fx:id="Services" layoutX="263.0" layoutY="299.0" prefHeight="35.0" prefWidth="274.0" promptText="Services" />
+      <TextField fx:id="Amount" layoutX="263.0" layoutY="202.0" prefHeight="35.0" prefWidth="274.0" promptText="Amount" />
+      <DatePicker fx:id="DateOfPayement" layoutX="263.0" layoutY="250.0" prefHeight="35.0" prefWidth="274.0" promptText="Date" />
+      <Button fx:id="AddFund" layoutX="325.0" layoutY="386.0" mnemonicParsing="false" onAction="#AddFund" prefHeight="56.0" prefWidth="145.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Add Fund" />
+      <Button fx:id="addCitizenPayment" layoutX="325.0" layoutY="386.0" mnemonicParsing="false" onAction="#addCitizenPayment" prefHeight="56.0" prefWidth="145.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Add Citizen's Payment" />
+      <Button fx:id="ShowAddNewFund" layoutX="167.0" layoutY="32.0" mnemonicParsing="false" onAction="#ShowAddNewFund" prefHeight="85.0" prefWidth="208.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Add a new Fund">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="ShowPayForService" layoutX="412.0" layoutY="32.0" mnemonicParsing="false" onAction="#ShowPayForService" prefHeight="85.0" prefWidth="208.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Pay for a Service">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TextField fx:id="IBAN" layoutX="263.0" layoutY="152.0" prefHeight="35.0" prefWidth="274.0" promptText="IBAN" />
+   </children>
+</AnchorPane>

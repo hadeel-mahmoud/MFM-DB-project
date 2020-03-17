@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CitizenController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="849.0" layoutX="-25.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@59550544_345009106374028_2534987700662960128_n.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="39.96" />
+         </effect>
+      </ImageView>
+      <TableView fx:id="CitizenTable" layoutX="293.0" layoutY="14.0" prefHeight="449.0" prefWidth="501.0">
+        <columns>
+          <TableColumn fx:id="TableID" prefWidth="69.00003051757812" text="ID" />
+          <TableColumn fx:id="TableName" prefWidth="102.0" text="Full Name" />
+            <TableColumn fx:id="TablePhone" prefWidth="121.99996948242188" text="Phone Number" />
+            <TableColumn fx:id="TableDate" prefWidth="92.0" text="DOB" />
+            <TableColumn fx:id="TableAddress" prefWidth="120.0" text="Address" />
+        </columns>
+      </TableView>
+      <Button fx:id="ShowAddCitizen" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowAddCitizen" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Add" />
+      <Button fx:id="ShowDeleteCitizen" layoutX="168.0" layoutY="14.0" mnemonicParsing="false" onAction="#ShowDeleteCitizen" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Delete" />
+      <Button fx:id="ShowSearchCitizen" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#ShowSearchCitizen" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Search" />
+      <Button fx:id="ShowModifyCitizen" layoutX="168.0" layoutY="74.0" mnemonicParsing="false" onAction="#ShowModifyCitizen" prefHeight="47.0" prefWidth="122.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Modify" />
+      <TextField fx:id="LastName" layoutX="14.0" layoutY="215.0" prefHeight="35.0" prefWidth="274.0" promptText="Last Name" />
+      <TextField fx:id="ID" layoutX="14.0" layoutY="131.0" prefHeight="35.0" prefWidth="274.0" promptText="ID" />
+      <TextField fx:id="Address" layoutX="14.0" layoutY="257.0" prefHeight="35.0" prefWidth="274.0" promptText="Address" />
+      <DatePicker fx:id="DOB" layoutX="14.0" layoutY="344.0" prefHeight="35.0" prefWidth="274.0" promptText="Date" />
+      <Button fx:id="BackButton" layoutX="14.0" layoutY="451.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Back" />
+      <TextField fx:id="FirstName" layoutX="14.0" layoutY="173.0" prefHeight="35.0" prefWidth="274.0" promptText="First Name" />
+      <TextField fx:id="PhoneNumber" layoutX="14.0" layoutY="300.0" prefHeight="35.0" prefWidth="274.0" promptText="Phone Number" />
+      <Button fx:id="ModifyCitizen" layoutX="194.0" layoutY="392.0" mnemonicParsing="false" onAction="#ModifyCitizen" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Modify" />
+      <Button fx:id="SearchCitizen" layoutX="194.0" layoutY="392.0" mnemonicParsing="false" onAction="#SearchCitizen" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Search" />
+      <Button fx:id="AddCitizen" layoutX="194.0" layoutY="392.0" mnemonicParsing="false" onAction="#AddCitizen" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Add" />
+      <Button fx:id="DeleteCitizen" layoutX="194.0" layoutY="392.0" mnemonicParsing="false" onAction="#DeleteCitizen" prefHeight="35.0" prefWidth="96.0" style="-fx-background-color: white; -fx-background-radius: 40px;" text="Delete" />
+      <Label fx:id="SearchLabel" layoutX="14.0" layoutY="182.0" prefHeight="203.0" prefWidth="274.0" text="Label" />
+   </children>
+</AnchorPane>
